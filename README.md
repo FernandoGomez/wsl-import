@@ -34,13 +34,3 @@ Distribute only that one file. When run:
 - That folder is permanently added to the user PATH
 
 Open a new terminal and run `wsl-import --help`.
-
-## One-command build + install (for development)
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\quick-install.ps1
-```
-
-This will:
-
-- Build and publish `wsl-import.exe`
