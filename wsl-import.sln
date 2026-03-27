@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wsl-import-cli", "wsl-import-cli.csproj", "{B0D68B51-3396-B482-28F1-A793C5FA71DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "installer", "installer", "{1860D2E4-5C43-71D5-59A5-599A4DE1DF67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wsl-import-installer", "installer\wsl-import-installer.csproj", "{0B2CC909-6DEF-DDEB-8990-42DAF16A8312}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D68B51-3396-B482-28F1-A793C5FA71DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D68B51-3396-B482-28F1-A793C5FA71DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D68B51-3396-B482-28F1-A793C5FA71DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D68B51-3396-B482-28F1-A793C5FA71DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2CC909-6DEF-DDEB-8990-42DAF16A8312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2CC909-6DEF-DDEB-8990-42DAF16A8312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2CC909-6DEF-DDEB-8990-42DAF16A8312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2CC909-6DEF-DDEB-8990-42DAF16A8312}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B2CC909-6DEF-DDEB-8990-42DAF16A8312} = {1860D2E4-5C43-71D5-59A5-599A4DE1DF67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9508AF29-E35F-4785-BE12-449D9B65FD43}
+	EndGlobalSection
+EndGlobal

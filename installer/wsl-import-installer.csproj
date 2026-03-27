@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>wsl-import-setup</AssemblyName>
+    <RootNamespace>WslImportSetup</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+  <!--
+    wsl-import.exe must be built first (run build-installer.ps1).
+    It is embedded here so the published setup exe is fully self-contained.
+  -->
+  <ItemGroup>
+    <EmbeddedResource
+      Include="..\bin\Release\net8.0\win-x64\publish\wsl-import.exe"
+      LogicalName="wsl-import.exe" />
+  </ItemGroup>
+</Project>
